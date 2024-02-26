@@ -1,70 +1,68 @@
-# Getting Started with Create React App
+# Git & Github
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+git commands
 
-## Available Scripts
+## some commands
 
-In the project directory, you can run:
+1. cd : change directory,
+2. ls : list file (shows all file inside folder which are not hidden),
+3. ls -a : list file (shows all files, hidden or not hidden both),
+4. mkdir name : making new directory,
+5. clear : to clear terminal
 
-### `npm start`
+## git configure
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+1. git config --global user.name "github username"
+2. git config --global user.email "github email"
+3. git config --list
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Commands Available
 
-### `npm test`
+Some script shown below
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. for ininilization: git init
+2. for remote repository: git remote add origin https:// github.com/Dikshit673/my-portfolio.git
+3. for checking remote repository: git remote -v
+4. for checking branch name: git branch
+5. for navigate in branches: git checkout branchName
+6. to create new branch: git checkout -b newBranchName
+7. to delete branch:git checkout -d branchName
+8. to rename branch (like default master to main): git branch -M main
+9. to commit branches,files and more: git diff branchName
+10. to merge branches(on standing branch to branchName): git merge BranchName
+11. to set origin to default (for long time,next time just use "git push"): git push -u origin main
+12. to pull from remote to local: git pull origin main
+13. for clone: git clone https:// github.com/Dikshit673/my-portfolio.git
+14. to check all commit: git log
 
-### `npm run build`
+## for usage commands (only main commands)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. for status: git status
+2. for adding: git add .
+3. for commit: git commit -m "message of commit"
+4. for push: git push origin main
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## type of state in status
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. Untracked (U): for new files,
+2. Modified (M): for modified files,
+3. Staged (U -> A, M -> M): those files which are added & ready to be commited,
+4. unmodified (): no change in file.
 
-### `npm run eject`
+## for undoing change
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+for resetting things.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### for staged
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+1. to reset only one or two file: git reset fileName
+2. to reset all files: git reset
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### for commit changes (only 1 commit)
 
-## Learn More
+1. if one commited: git reset HEAD~1
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### for commit changes (for many commit)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+1. if many commited: git reset commitHash
+2. if many commited (to changes from git as well as vs code): git reset --hard commitHash
