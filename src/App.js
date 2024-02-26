@@ -1,7 +1,11 @@
+import TypedAnimation from './Components/TypedAnimation';
 import logo from './logo.svg';
 import './Style.css';
 
-function App() {
+
+
+const App = () => {
+
   return (
     <div className="App">
       <header className="App-header">
@@ -17,6 +21,9 @@ function App() {
         >
           Learn React
         </a>
+
+        <TypedAnimation />
+
       </header>
     </div>
   );
