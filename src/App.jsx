@@ -1,4 +1,4 @@
-import Header from './Components/Header';
+import HeaderBody from './Components/HeaderBody';
 import Navbar from './Components/Navbar';
 
 const App = () => {
@@ -7,13 +7,14 @@ const App = () => {
     <>
       <header>
         <Navbar />
+        <HeaderBody />
       </header>
-      <main>
-        <Header />
-      </main>
-      <footer>
+      {/* <main>
+        
+      </main> */}
+      {/* <footer>
         <div className='container'>Sachin Kumar</div>
-      </footer>
+      </footer> */}
 
     </>
   );
