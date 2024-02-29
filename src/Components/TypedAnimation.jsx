@@ -6,7 +6,7 @@ const TypedAnimation = () => {
 
     useEffect(() => {
         const typed = new Typed(el.current, {
-            strings: ['React is a Awesome library'],
+            strings: ['Web Developer', 'Engineer',],
             typeSpeed: 50,
             startDelay: 0,
             backSpeed: 70,
@@ -31,9 +31,7 @@ const TypedAnimation = () => {
     }, []);
 
     return (
-        <div>
-            <span ref={el}></span>
-        </div>
+        <span ref={el}></span>
     );
 }
 

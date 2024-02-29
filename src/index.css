@@ -16,13 +16,32 @@
   --wht-col: #ffffff;
 }
 
-.main-section {
+.main-sectionU {
   background-color: var(--bg-col);
-  height: 3%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 99;
+}
+
+.main-sectionL {
+  background-color: var(--bg-col);
+  width: 100%;
+  z-index: 2;
 }
 
 .letter-P {
   margin-left: 5%;
   font-size: 1.5rem;
   font-weight: 600;
+}
+
+.for-height {
+  height: 100vh;
+}
+
+@media(max-width:992px) {
+  .main-section {
+    height: 6%;
+  }
 }

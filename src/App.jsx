@@ -1,13 +1,21 @@
-import HeaderBody from './Components/HeaderBody';
-import Navbar from './Components/Navbar';
+import Hero from './Components/Hero';
+import NavbarL from './Components/NavbarL';
+import NavbarU from './Components/NavbarU';
 
 const App = () => {
 
   return (
     <>
       <header>
-        <Navbar />
-        <HeaderBody />
+        <NavbarU />
+        <NavbarL />
+
+        <Hero color="yellow" />
+        <Hero color="orange" id="intro" />
+        <Hero color="blue" id="service" />
+        <Hero color="purple" id="blog" />
+        <Hero color="green" id="contact" />
+
       </header>
       {/* <main>
         
