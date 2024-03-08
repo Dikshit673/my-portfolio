@@ -1,29 +1,27 @@
+import React from 'react';
+
+import Navbar from './Components/Navbar';
 import Hero from './Components/Hero';
-import NavbarL from './Components/NavbarL';
-import NavbarU from './Components/NavbarU';
+import About from './Components/About';
+import Contact from './Components/Contact';
+import Footer from './Components/Footer';
 
 const App = () => {
+  // const [com, setCom] = React.useState(About);
 
+  // console.log(com);
   return (
     <>
-      <header>
-        <NavbarU />
-        <NavbarL />
+      <Navbar />
+      <Hero />
 
-        <Hero color="yellow" />
-        <Hero color="orange" id="intro" />
-        <Hero color="blue" id="service" />
-        <Hero color="purple" id="blog" />
-        <Hero color="green" id="contact" />
+      <main>
+        {/* {com} */}
+        <About />
+        <Contact />
+      </main>
 
-      </header>
-      {/* <main>
-        
-      </main> */}
-      {/* <footer>
-        <div className='container'>Sachin Kumar</div>
-      </footer> */}
-
+      <Footer />
     </>
   );
 }

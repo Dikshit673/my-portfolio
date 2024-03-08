@@ -2,6 +2,7 @@ import React, { useRef, useEffect } from 'react';
 import Typed from 'typed.js';
 
 const TypedAnimation = () => {
+
     const el = useRef(null);
 
     useEffect(() => {
