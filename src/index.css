@@ -22,7 +22,7 @@
     sans-serif;
 }
 
-/* navbar starts */
+/*----------------------------------- navbar starts-------------------------- */
 
 .navbar-section {
   position: sticky;
@@ -62,10 +62,11 @@
   }
 }
 
-/* hero-section */
+/*--------------------------------------- hero-section--------------------------------- */
 
 .hero-section {
-  min-height: 90vh;
+  /* min-height: 90vh; */
+  height: auto;
   background-color: var(--bg-col);
   /* overflow: hidden; */
 }
@@ -184,7 +185,7 @@ h4 {
   }
 }
 
-/* about section */
+/*------------------------------------------------- about section---------------------------------------- */
 
 .about-section {
   min-height: 90vh;
@@ -243,7 +244,7 @@ h4 {
   }
 } */
 
-/* contact-section */
+/* ----------------------------------------------contact-section---------------------------------- */
 
 .contact-section {
   min-height: 90vh;
@@ -409,7 +410,7 @@ h4 {
   }
 }
 
-/* footer section */
+/*-------------------------------------- footer section----------------------------------- */
 
 footer {
   min-height: 20vh;

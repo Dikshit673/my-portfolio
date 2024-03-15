@@ -1,5 +1,5 @@
 import React from 'react';
-// import TypedAnimation from './TypedAnimation';
+import TypedAnimation from './TypedAnimation';
 
 const Hero = () => {
     return (
@@ -14,7 +14,9 @@ const Hero = () => {
                     <div className='row h-100 hero-rowdiv'>
                         <div className='col-12 col-lg-6 tex-cen'>
                             <div className='tex-indiv'>
-                                <h1>Hey, I am <span>Sachin Kumar</span></h1>
+                                <h1>Hey, I am <span>Sachin Kumar </span></h1>
+                                <h1 className=' d-flex'><TypedAnimation /></h1>
+
                                 <p className='hero-tagline'>A Passionate Front-End Developer</p>
                                 <p className='hero-description'>
                                     Crafting immersive and responsive web experiences with a love for clean and efficient code.
