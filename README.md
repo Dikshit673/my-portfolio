@@ -1,68 +1,38 @@
-# Git & Github
+# abc
 
-git commands
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-## some commands
+## Getting Started
 
-1. cd : change directory,
-2. ls : list file (shows all file inside folder which are not hidden),
-3. ls -a : list file (shows all files, hidden or not hidden both),
-4. mkdir name : making new directory,
-5. clear : to clear terminal
+First, run the development server:
 
-## git configure
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
+```
 
-1. git config --global user.name "github username"
-2. git config --global user.email "github email"
-3. git config --list
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-## Commands Available
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-Some script shown below
+This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-1. for ininilization: git init
-2. for remote repository: git remote add origin https:// github.com/Dikshit673/my-portfolio.git
-3. for checking remote repository: git remote -v
-4. for checking branch name: git branch
-5. for navigate in branches: git checkout branchName
-6. to create new branch: git checkout -b newBranchName
-7. to delete branch:git checkout -d branchName
-8. to rename branch (like default master to main): git branch -M main
-9. to commit branches,files and more: git diff branchName
-10. to merge branches(on standing branch to branchName): git merge BranchName
-11. to set origin to default (for long time,next time just use "git push"): git push -u origin main
-12. to pull from remote to local: git pull origin main
-13. for clone: git clone https:// github.com/Dikshit673/my-portfolio.git
-14. to check all commit: git log
+## Learn More
 
-## for usage commands (only main commands)
+To learn more about Next.js, take a look at the following resources:
 
-1. for status: git status
-2. for adding: git add .
-3. for commit: git commit -m "message of commit"
-4. for push: git push origin main
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-## type of state in status
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-1. Untracked (U): for new files,
-2. Modified (M): for modified files,
-3. Staged (U -> A, M -> M): those files which are added & ready to be commited,
-4. unmodified (): no change in file.
+## Deploy on Vercel
 
-## for undoing change
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-for resetting things.
-
-### for staged
-
-1. to reset only one or two file: git reset fileName
-2. to reset all files: git reset
-
-### for commit changes (only 1 commit)
-
-1. if one commited: git reset HEAD~1
-
-### for commit changes (for many commit)
-
-1. if many commited: git reset commitHash
-2. if many commited (to changes from git as well as vs code): git reset --hard commitHash
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
